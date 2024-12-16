@@ -1,0 +1,39 @@
+
+.Services{
+  color: var(--secondary-color);
+  min-height: 100vh;
+  background: url('../../Components/Assets/RedTree.jpg') no-repeat;
+  background-size: cover;
+}
+.servicebtn{
+    background-color: var(--secondary-color);
+    color: var(--red-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 4px;
+    border-radius: 5%;
+    margin: 2%;
+    padding: 1% 2% 1% 2%;
+    border: 0;
+}
+.cardgroup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lbl{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.servicebtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.Services{
+    background-color: rgb(91, 4, 40);
+    color: coral;
+}

@@ -1,0 +1,24 @@
+:root {
+  --primary-color-dark: #4C1819;
+  --secondary-color: #E1C9A2;
+  --brown-color: #7B6452;
+  --red-color: #801A15;
+  --light-brown: #B4A69B;
+
+  --secondary-color: #ffffff;
+
+  --border-style: solid;
+  --font-new: 'Aldrich';
+  --font-style: 'normal';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'roboto', 'sans-serif';
+  background-color: rgb(83, 7, 22);
+}

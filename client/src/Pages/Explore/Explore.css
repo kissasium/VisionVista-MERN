@@ -1,0 +1,23 @@
+.explore-body {
+    color: var(--secondary-color);
+  min-height: 100vh;
+  background: url('../../Components/Assets/RedTree.jpg') no-repeat;
+  background-size: cover;
+}
+
+.explore-body input {
+    max-width: 50%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: calc(25%);
+    height: 38px;
+}
+
+.explore-body .input-group {
+    display: flex;
+    align-items: center;
+}
+
+.explore-body .input-group-append .btn {
+    height: 38px; /* Adjust the height to match the input field */
+}

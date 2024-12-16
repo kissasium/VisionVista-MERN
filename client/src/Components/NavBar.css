@@ -1,0 +1,31 @@
+.navbar-custom {
+    font-family: 'roboto';
+    background-color: black;
+}
+
+.nav-link-custom {
+    color: var(--red-color);
+    font-size: large;
+    margin-left: 5%;
+    font-weight: 600;
+}
+
+.nav-link-custom:hover {
+
+    color: white;
+}
+
+.active {
+    color: white !important;
+}
+
+
+.navbar-logo {
+
+    max-width: 200px;
+    height: auto;
+}
+
+.toggle {
+    background-color: var(--red-color);
+}

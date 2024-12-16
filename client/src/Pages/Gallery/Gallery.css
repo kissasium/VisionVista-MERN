@@ -1,0 +1,228 @@
+.main-content {
+    top:14%;
+    font-family: 'roboto';
+    color: var(--secondary-color);
+    min-height: 100vh;
+    background: url('../../Components/Assets/RedTree.jpg') no-repeat;
+    background-size: cover;
+}
+
+header {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(30px);
+    text-align: center;
+    padding: 20px;
+
+}
+
+header h1 {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+header input[type="text"] {
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+footer {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(30px);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+
+#navhere {
+    margin-top: 3%;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#buttonpic {
+    color: var(--red-color);
+    font-weight: 500;
+    background-color: whitesmoke;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+#buttonpic:hover {
+    color: whitesmoke;
+    background-color: black;
+}
+
+
+#buttonpic:before {
+    content: url('add.png');
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(30px);
+    color: white;
+    text-align: left;
+    margin: 1%;
+    border-radius: 5px;
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    position: relative;
+
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+        /* the card will take 50% of the original screen, with 20% marging for padding and stuff*/
+    }
+
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: calc(100% - 20px);
+        /* the card will take 100% of the original screen, with 20% marging for padding and stuff*/
+    }
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: whitesmoke;
+    padding: 5px 15px 5px 15px;
+    font-weight: 500;
+    color: var(--red-color);
+    cursor: pointer;
+    position: absolute;
+    border-radius: 5%;
+    top: 85%;
+    right: 10%;
+    border: none;
+    font-size: 18px;
+}
+
+.delete-btn:hover {
+    color: whitesmoke;
+    background-color: black;
+}
+
+
+#addCardForm {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+#addCardForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e53935;
+}
+
+#addCardForm input[type="text"],
+#addCardForm input[type="date"],
+#addCardForm input[type="time"],
+#addCardForm textarea,
+#addCardForm input[type="file"],
+#addCardForm input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#addCardForm textarea {
+    resize: vertical;
+}
+
+#addCardForm input[type="submit"] {
+    background-color: #e57373;
+    color: white;
+    cursor: pointer;
+}
+
+#addCardForm input[type="submit"]:hover {
+    background-color: #d32f2f;
+}
+
+#imagePreview img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.card-content {
+    pointer-events: none;
+}
+
+.card-content.editable {
+    pointer-events: auto;
+    background-color: #ffebee;
+}
+
+.card-content p {
+    margin: 5px 0;
+}
+
+.card-content p span {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.card-content p span[contenteditable="true"] {
+    background-color: #fff;
+    border: 1px dashed #e57373;
+}

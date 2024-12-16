@@ -1,0 +1,152 @@
+.main {
+  color: var(--secondary-color);
+  min-height: 100vh;
+  background: url('../../Components/Assets/RedTree.jpg') no-repeat;
+  background-size: cover;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  /* two item left and right with equal spaces */
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  padding: 30px 40px;
+
+  align-items: center;
+  max-width: 800px;
+
+}
+
+
+.profile-left {
+  flex: 1;
+  text-align: center;
+  margin-right: 30px;
+  margin-top: 90px;
+}
+
+
+.profile-picture {
+  position: relative;
+  /*it doesnt effect position of other elements */
+}
+
+
+.profile-picture img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 5px solid red;
+  /*boarder color of the pic */
+}
+
+
+.change-profile-button {
+  position: relative;
+  display: flex;
+  margin-top: 10%;
+  margin-left: 10%;
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.profile-right {
+  flex: 2;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+
+.profile-right h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: black;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+
+input[type="text"],
+/*input fields */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.save-button {
+  margin-left: calc(50% - 40px);
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover
+
+/*button will turn bright red when mouse is on it */
+  {
+  background-color: darkred;
+}
+
+
+/*for smaller screens */
+@media only screen and (max-width: 700px)
+/* hi kalsoom */
+  {
+  .profile-picture img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .change-profile-button {
+
+    margin-top: 5%;
+    margin-left: 30%;
+    padding: 5px 10px;
+  }
+
+  .profile-left {
+    margin-top: 10px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-right {
+    width: 100%;
+    margin-top: 80px;
+  }
+}
